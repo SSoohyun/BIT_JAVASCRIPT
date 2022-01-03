@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST HTML</title>
+</head>
+
+<body>
+    <!-- <strong>Yesterday is history.</strong> </br>
+    <em>Tomorrow is mystery.</em> </br>
+    <p>Today is a <b>gift</b>.
+    <sup>That's</sup> <sub>why</sub> it's <>""& &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; called the <i>present</i>...</p>
+    
+    <h1>분식 메뉴</h1> <hr/>
+    <h2>어! 김떡순 12000원</h2>
+    <p>어묵+김밥+떡볶이+순대</p>
+    <h2>떡튀순 10000원</h2>
+    <p>떡볶이+튀김+순대</p>
+
+    <ruby>
+        <span>大韓民國</span>
+        <rt>대한민국</rt>
+    </ruby> -->
+
+
+    <!-- 번호 없는 리스트 -->
+    <!-- <ul>
+        <li>어! 김떡순 12000원</li>
+        <li>떡튀순 10000원</li>
+    </ul> -->
+
+    <!-- 번호 있는 리스트 -->
+    <!-- <ol>
+        <li>어! 김떡순 12000원</li>
+        <li>떡튀순 10000원</li>
+    </ol> -->
+
+    <!-- 정의 리스트 -->
+    <!-- <dl>
+        <dt>어! 김떡순 12000원</dt>
+        <dd>어묵+김밥+떡볶이+순대</dd>
+        <dt>떡튀순 10000원</dt>
+        <dd>떡볶이+튀김+순대</dd>
+    </dl> -->
+
+
+    <!-- 링크 -->
+    <!-- <a href="http://www.google.com" target="_self">방문 1</a> </br>
+    <a href="http://www.google.com" target="_blank">방문 2</a> </br> -->
+
+    <!-- 다운로드 링크 -->
+    <!-- <a href="http://127.0.0.1:5500/images/choonsik.jpg">파일 다운로드</a> </br> -->
+
+    <!-- 이메일 링크 -->
+    <!-- <a href="mailto:smy4test@gmail.com?subject=Feedback">emailMe</a> </br> -->
+
+
+    <!-- 이미지 -->
+    <!-- 한 쪽만 크기 지정해주면 알아서 맞춰줌 -->
+    <!-- <img src="./images/rose.jpg" border="5" width="300" alt="해당 이미지 없음"> -->
+
+
+    <!-- 테이블 -->
+    <table border="1">
+        <caption>등장인물</caption>
+        <tr>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>소속</th>
+        </tr>
+        <tr>
+            <td>conan</td>
+            <td>코난</td>
+            <td rowspan="2">청솔초등학교</td>
+        </tr>
+        <tr>
+            <td>rose</td>
+            <td>장미</td>
+        </tr>
+        <tr>
+            <td colspan="3">열병합</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td width="50%">
+                <ul>
+                    <li>리스트1</li>
+                    <li>리스트2</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>리스트3</li>
+                    <li>리스트4</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>어떤 요소든 OK</p>
+            </td>
+            <td>
+                <img border="0" src="images/choonsik.jpg" width="100" alt="춘식">
+            </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span="2" style="background-color: red" />
+            <col style="background-color: blue" />
+        </colgroup>
+        <thead style="background-color: greenyellow">
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: rgb(228,228,82)">
+            <!-- <tfoot style="background-color: #FF0000"> -->
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- 오디오 -->
+    <!-- <audio src="audios/Unavailable.mp3" autoplay controls>
+        브라우저가 오디오 파일 포맷을 지원하지 않습니다
+    </audio> -->
+
+    <!-- 비디오 -->
+    <!-- <video autoplay controls src="videos/Trees - 93826.mp4">
+        브라우저가 video 파일 포맷을 지원하지 않습니다.
+    </video> -->
+
+
+    <!-- HTML 요소 -->
+    <h1>h1h1</h1>
+    <p>ppppppppppppp</p>
+
+    <div style="background-color: lightblue">첫번째</div>
+    <div style="background-color: lightgreen">첫번째</div>
+    <p style="background-color: pink">블록요소임</p>
+
+    <a href="http://www.google.com">링크를 클릭</a>
+    <span style="background-color: lightgreen;">인라인 요소임</span>
+    <p style="background-color: pink;">인라인 요소들은 텍스트 길이만큼의 너비를 차지함</p>
+
+    <!-- div vs span -->
+    <div style="border:3px solid red">
+        <h2>사자</h2>
+        <p>사자는 아프리카에 살며 강한 다리와 턱, <span style="color:blue">긴 송곳니</span>
+        가 어쩌로 저쩌고</p>
+    </div>
+
+
+    
+</body>
+
+</html>

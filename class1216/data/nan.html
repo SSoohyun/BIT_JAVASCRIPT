@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        이름: <input type="text" name="name">
+        <p><input type="button" value="제출" onclick="checkForm()"></p>
+    </form>
+
+    <script>
+        function checkForm() {
+            if (!isNaN(document.frm.name.value.substr(0, 1))) { // isNaN: 숫자이면 false, 아니면 true 반환 / substr: 0번에 1개
+                alert('이름은 숫자로 시작할 수 없음!');
+                document.frm.name.select();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var regExp = /^j/igm; // j로 시작하는 단어, 대소문자 구분x, 줄바꿈도 포함하여 전체에서 탐색 (m은 줄바꿈)
+        var string = 'Javascript\njQuery\nAjax';
+        var output = string.replace(regExp, '+$&+');
+        alert(output);
+    
+        
+        function checkForm() {
+            var str = document.frm.name.value;
+            var regExp = /^[a-z|A-Z|ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+            if (!regExp.test(str)) {
+                alert("이름을 숫자로 시작할 수 없음!");
+                return;
+            }
+        }    
+    </script>
+    <form name="frm">
+        이름: <input type="text" name="name">
+        <p><input type="button" value="제출" onclick="checkForm()"></p>
+    </form>
+</body>
+</html>

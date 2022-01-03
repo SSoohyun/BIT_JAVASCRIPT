@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            var array = [
+                {name: 'naver', link: 'https://naver.com'},
+                {name: 'daum', link: 'https://daum.net'},
+                {name: 'google', link: 'https://google.com'},
+            ];
+
+            $.each(array, function(index, item) { // index: 배열의 인덱스 또는 객체의 키, item: 해당 인덱스나 키가 가진 값
+                var output = '';
+                output += '<a href="' + item.link + '">';
+                output += '<h1>' + item.name + '</h1>';
+                output += '</a>';
+                document.body.innerHTML += output;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add() {
+            var img = document.createElement("img");
+            // 객체 변수 사용: 객체변수.속성 = 값
+            //img.src = '../image/choonsik.jpg';
+            //img.width = 100; img.height = 100;
+            //document.body.appendChild(img);
+
+
+            // 속성 메소드 사용: setAttribute(속성, 값)
+            img.setAttribute('src', '../image/choonsik.jpg');
+            img.setAttribute('width', 100);
+            img.setAttribute('width', 100);
+            img.setAttribute('height', 100);
+            document.body.appendChild(img);
+        }
+    </script>
+    <a href="#" onclick="add()">[이미지 추가]</a>
+</body>
+</html>

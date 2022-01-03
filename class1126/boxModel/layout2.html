@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #1
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0 auto;
+            width: 700px;
+        } */
+
+        /* div.container{
+            overflow: hidden;
+        }
+        div.item{
+            float: left;
+            margin: 0 3px;
+            padding: 10px;
+            border: 1px solid black;
+        } */
+
+        /* #2        
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .clear{
+            clear: both;
+        }
+        #aside{
+            float: left;
+            width: 260px;
+        }
+        #section{
+            float: right;
+            width: 680px;
+        } */
+
+        /* #3
+        body{
+            width: 500px;
+            margin: 10px auto;
+        }
+        #middle{
+            overflow: hidden;
+        }
+        #left{
+            float: left;
+            width: 150px;
+            background: yellow;
+        }
+        #right{
+            float: left;
+            width: 350px;
+            background: blue;
+        }
+        #top{
+            background: green;
+        }
+        #bottom{
+            background: magenta;
+        } */
+
+        /* #4
+        #container{
+            width: 500px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+        .circle{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50%;
+        }
+        #red{
+            background: red;
+            left: 20px;
+            top: 20px;
+        }
+        #green{
+            background: green;
+            right: 20px;
+            top: 20px;
+        }
+        #blue{
+            background: blue;
+            right: 20px;
+            bottom: 20px;
+        }
+        #yellow{
+            background: yellow;
+            left: 20px;
+            bottom: 20px;
+        } */
+
+        /* #5
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: blue;
+        }
+        #container{
+            width: 500px;
+            height: 250px;
+            background: orange;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -125px;
+        } */
+
+
+        h1, p{
+            width: 300px;
+        }
+        .ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- #1
+    <h1>Lorem inpsum</h1>
+    <h2>Neque porro quisquam est qui...</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Omnis corporis in, explicabo maiores adipisci assumenda? 
+        Voluptatem animi error nostrum blanditiis, 
+        suscipit aliquid adipisci dolor libero ratione id nesciunt consequuntur eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deserunt, consequuntur eveniet! Doloribus possimus illum inventore saepe dolor similique itaque, qui sequi fuga. 
+        Corporis quo nostrum soluta fugit fuga laborum modi.</p> -->
+
+    <!-- <div class="container">
+        <div class="item">메뉴 1</div>
+        <div class="item">메뉴 2</div>
+        <div class="item">메뉴 3</div>
+        <div class="item">메뉴 4</div>
+    </div> -->
+
+    <!-- #2
+    <div id="header"><h1>Header</h1></div>
+    <div id="header"><h1>Navigation</h1></div>
+    <div class="clear"></div>
+    <div id="aside">
+        <h1>Aside</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quibusdam iusto molestias optio non illum odit illo perspiciatis eaque quis officia? 
+            Obcaecati at itaque, autem reprehenderit delectus doloribus maiores praesentium deserunt!</p>
+    </div>
+    <div id="section">
+        <h1>Section</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolore vitae animi cupiditate fugiat aliquam, minima maiores, 
+            sint ab suscipit vero labore veniam dolorem nisi illo repellendus ratione! Odit, illo neque?</p>
+    </div>
+    <div class="clear"></div>
+    <div id="footer"><h1>Footer</h1></div>
+    <div class="clear"></div> -->
+
+    <!-- #3
+    <div id="top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Alias quae harum recusandae non quas, debitis enim atque, voluptatum unde, 
+        eius in saepe id dolorum numquam repellat consequatur labore. Laudantium, eligendi.
+    </div>
+    <div id="middle">
+        <div id="left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Alias quae harum recusandae non quas, debitis enim atque, voluptatum unde, 
+            eius in saepe id dolorum numquam repellat consequatur labore. Laudantium, eligendi.
+        </div>
+        <div id="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Alias quae harum recusandae non quas, debitis enim atque, voluptatum unde, 
+            eius in saepe id dolorum numquam repellat consequatur labore. Laudantium, eligendi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Sequi repudiandae officiis nesciunt commodi dolorem quas! Beatae praesentium impedit odio provident. 
+            Dolor incidunt corporis molestiae odio accusamus, tenetur at eos quia.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatibus nisi molestias iusto sit iste perspiciatis eum, 
+            impedit modi eaque esse quos suscipit fuga. 
+            Iste qui placeat voluptatum ab aut.
+        </div>
+    </div>
+    <div id="bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Alias quae harum recusandae non quas, debitis enim atque, voluptatum unde, 
+        eius in saepe id dolorum numquam repellat consequatur labore. Laudantium, eligendi.
+    </div> -->
+
+    <!-- #4
+    <h1>동그라미 동그라미 동그라미 동그라미</h1>
+    <div id="container">
+        <div id="red" class="circle"></div>
+        <div id="green" class="circle"></div>
+        <div id="blue" class="circle"></div>
+        <div id="yellow" class="circle"></div>
+    </div>
+    <h1>동그라미 동그라미 동그라미 동그라미</h1> -->
+
+    <!-- #5
+    <div id="container">
+        <h1>절대 좌표를 사용한 중앙 정렬</h1>
+    </div> -->
+
+    #6
+    <h1 class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+</body>
+</html>

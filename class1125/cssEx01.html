@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 외부 스타일 적용 -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/css_ex.css"></link> -->
+    <style>
+        /* p{
+            color: blue!important;
+        }
+        p{
+            color: yellow;
+        }
+        p{
+            color: red;
+        } */
+
+        /* *{
+            color: red;
+            background-color: yellow;
+            font-size: 13px;
+        } */
+
+        /* h1{
+            background-color: yellow;
+        }
+        h2{
+            background-color: green;
+        }
+        h3{
+            background-color: pink;
+        }
+        p{
+            color: red;
+        } */
+
+        /* .class1{
+            color: blue;
+            background-color: yellow;
+        }
+        .class2{
+            color: red;
+            background-color: green;
+        }
+        h3.class1{
+            color: navy;
+            background-color: pink;
+        } */
+
+        /* #id1{
+            color: blue;
+            background-color: pink;
+        }
+        #id2{
+            color: blue;
+            background-color: yellow;
+        }
+        h2#id1{
+            color: red;
+            background-color: green;
+        } */
+
+        /* h1[text]{
+            color: red;
+            background-color: gray;
+        }
+        p[text]{
+            color: blue;
+            background-color: yellow;
+        }
+        h1[text="attr3"]{
+            color: green;
+            background-color: pink;
+        } */
+        
+        p[text]{
+            color: red;
+        }
+        p[text="red"]{
+            color: yellow;
+            background-color: purple;
+        }
+        p[text~="bb"]{
+            color: yellow;
+            background-color: green;
+        }
+        p[text|="a1"]{
+            color: yellow;
+            background-color: blue;
+        }
+        p[text^="img"]{
+            color: yellow;
+            background-color: red;
+        }
+        p[text$=".png"]{
+            color: yellow;
+            background-color: gray;
+        }
+        p[text*="ong"]{
+            color: yellow;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <p1 style="color: red;">인라인 스타일 시트 적용</p1><br/>
+    <p2>내부 스타일 시트 적용</p2><br/>
+    <p3>외부 스타일 시트 적용</p3><br/> -->
+    
+    <!-- <p>CSS가 중복 정의된 경우 어떤 것을 선택?</p> -->
+    
+    <!-- 전체 선택자 -->
+    <!-- <h1>전체 선택자</h1>
+    <h2>모두 같은 색상, 같은 크기</h2>
+    <h3>전체적으로 동시에 스타일 적용</h3>
+    <p>모든 데이터에 적용</p> -->
+
+    <!-- 타입 선택자 -->
+    <!-- <h1>Type Selector</h1>
+    <h2>Type Selector</h2>
+    <h3>Type Selector</h3>
+    <p>각 요소에 다르게 적용</p> -->
+
+    <!-- 클래스 선택자 -->
+    <!-- <h1 class="class1">Class1임</h1>
+    <p class="class1">Class1임</p>
+    <h1 class="class2">Class2임</h1>
+    <p class="class2">Class2임</p>
+    <h3 class="class1">Element+Class Selector</h3> -->
+
+    <!-- ID 선택자 -->
+    <!-- <h1 id="id1">ID1 선택자</h1>
+    <p id="id1">ID1 선택자</p>
+    <h1 id="id2">ID2 선택자</h1>
+    <p id="id2">ID2 선택자<p>
+    <h2 id="id1">Element+ID Selctor</h2> -->
+
+    <!-- 속성, 속성값 선택자 -->
+    <!-- <h1 text="attr1">text 속성 이름 선택자</h1>
+    <h1 text="attr2">text 속성 이름 선택자</h1>
+    <p text="attr3">text 속성 이름 선택자</p>
+    <h1 text="attr3">속성과 속성값 선택자</h1>
+    <p>속성 선택 없음</p> -->
+
+    <!-- 속성 선택자 -->
+    <p text="hello">모든 텍스트</p>
+    <p text="red">텍스트 매칭 속성</p>
+    <p text="aa bb cc">리스트 매칭 속성</p>
+    <p text="a1-a2-a3">범위 텍스트 매칭 속성</p>
+    <p text="img/pic.jpg">텍스트 시작 매칭 속성</p>
+    <p text="img/pic.png">텍스트 끝 매칭 속성</p>
+    <p text="Seongyong Hong">텍스트 패턴 매칭 속성</p>
+    
+</body>
+</html>

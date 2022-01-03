@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arrdata = [];
+        function insertArr() { // 배열 데이터 입력 함수
+            var i;
+            for (i = 0; i <= 99; i++) {
+                arrdata[i] = i + 1; // 1부터 100까지 배열에 저장
+                document.write(arrdata[i] + " ");
+            }
+            document.write("<p>");
+        }
+        function delArr() {
+            var i;
+            for (i = 0; i < arrdata.length; i++) {
+                if (i % 2 == 0) {
+                    arrdata[i] = 0;
+                }
+                continue;
+            }
+            selectArr();
+        }
+        function selectArr() {
+            var i;
+            for (i = 0; i < arrdata.length; i++) {
+                document.write(arrdata[i] + " ");
+            }
+            document.write("<p> 홀수번째 데이터 초기화 완료!" + "</p>");
+            document.write("<a href='arrayEx9.html'>돌아가기</a>");
+        }
+        insertArr();
+    </script>
+    <button type="button" onclick="delArr()">배열의 홀수번째 데이터 초기화</button>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+    <script>
+        // 콜백 함수: 매개변수로 전달하는 함수
+
+        // 함수 선언
+        function callThreeTimes(callback) {
+            for (var i = 0; i < 3; i++) {
+                callback();
+            }
+        }
+        // 변수 선언
+        var callback = function() { // 익명 함수
+            alert('함수 호출');
+        }
+        // 함수 호출
+        callThreeTimes(callback);
+
+
+
+        
+        // 익명 콜백 함수
+
+        // 함수 선언
+        function callThreeTimes(callback) {
+            for (var i = 0; i < 3; i++) {
+                callback();
+            }
+        }
+        // 함수  호출
+        callThreeTimes(function() {
+            alert('함수 호출');
+        });
+    </script>
+</body>
+</html>

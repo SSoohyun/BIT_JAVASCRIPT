@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            // 스타일 속성을 변경
+            $('h1').css('color', 'red');
+            $('h1').css('background', 'black');
+        });
+
+        $(document).ready(function() {
+            // 속성을 추출
+            var src = $('script').attr('src');
+            alert(src);
+        });
+
+
+        // 개별 지정
+        // $(document).ready(function() {
+        //     // 속성을 지정
+        //     $('img').attr('alt', '속성 지정 연습');
+        //     $('img').attr('src', '../image/choonsik.jpg');
+        //     $('img').attr('width', '100');
+        // });
+
+        // 한 번에 지정
+        // $(document).ready(function() {
+        //     // 객체를 이용한 속성 지정
+        //     $('img').attr({
+        //         alt: '속성 지정 연습',
+        //         src: '../image/choonsik.jpg',
+        //         width: 100
+        //     });
+        // });
+        
+        // 사이즈 변경
+        $(document).ready(function() {
+            $('img').attr({
+                alt: '속성 지정 연습',
+                src: function(index) {
+                    debugger;
+                    var size = (index + 1) * 100;
+                    return 'http://placehold.it/' + size + 'x100'; // width, height
+                }
+            });
+        });
+
+    </script>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <img>
+    <img>
+    <img>
+</body>
+</html>

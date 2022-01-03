@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/listbody.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header class="bgh">
+        <div class="navbar">
+          <a href="main.html"><img src="images/logo4.png" class="logo"></a>
+          <nav id="inv">
+            <ul>
+              <li><a href="listBody.html">Hospital</a></li>
+              <li><a href="listBody.html">Travel</a></li>
+              <li><a href="listBody.html">Service</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="mypage.html"><img src="images/menu.png" class="menu-icon"></a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <div id="frame">
+        <form>
+            <div id="frame2">
+                <span style="font-size: 16pt; font-weight: bold;">장바구니</span>
+                <span class="home">홈 > 장바구니</span>
+                <span></span>
+            </div>
+            <br>
+
+            <div>
+                <table class="interest">
+                    <thead>
+                        <tr>
+                            <th colspan="10" style="text-align: left; padding-left: 10px;">일반상품(1)</th>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" name="checkbox" id="check" checked/></th>
+                            <th><span>이미지</span></th>
+                            <th style="width: 550px;"><span>상품정보</span></th>
+                            <th>판매가</th>
+                            <th>수량</th>
+                            <th style="width: 100px;">적립금</th>
+                            <th>배송구분</th>
+                            <th>배송비</th>
+                            <th>합계</th>
+                            <th>선택</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr style="height: 90px; background-color: #fff;">
+                            <td style="text-align: center; border-right: none;">
+                                <input type="checkbox" name="checkbox" checked/>
+                            </td>
+                            <td style="border-left: none; border-right: none;">
+                                <img style="width: 80%; background-color: beige;" src="images/logo.png">
+                            </td>
+                            <td style="text-align: left; padding-left: 10px; border-left: none; font-weight: bold;">
+                               강아지 발바닥 장난감
+                            </td>
+                            <td><span>12000</span>원</td>
+                            <td style="width: 80px;">
+                                <input type="number" style="text-align: right; width: 43px; margin-bottom: 5px;" min="1" max="99" step="1" value="1" />
+                                <button class="btn default_btn" style="border-radius: 3px; size: 10px;">변경</button>
+                            </td>
+                           
+                            <td>-</td>
+                            <td>기본배송</td>
+                            <td>2500원</td>
+                            <td><span>14500</span>원</td>
+                        
+                            <td>
+                                <button class="btn default_btn" style="border-radius: 3px; width: 90px; margin-bottom: 3px; font-size: 11px; background-color: #264d73; color: white;">주문하기</button><br>
+                                <button class="btn default_btn" style="border-radius: 3px; width: 90px; margin-bottom: 3px; font-size: 11px;">관심상품등록</button><br>
+                                <button class="btn default_btn" style="border-radius: 3px; width: 90px; margin-bottom: 3px; font-size: 11px;">X 삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr style="height: 60px">
+                            <td colspan="5" style="border-right: none; text-align: left; padding-left: 10px;">
+                                <span>[기본배송]</span>
+                            </td>
+                            <td colspan="5" style="border-left: none; text-align: right; padding-left: 10px;">
+                                상품금액<span>12000</span>원 + <span>배송비 2,500원 = 합계</span>&nbsp;<span style="font-weight: bold; font-size: 15pt;">14500</span>원
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div style="border: 1px solid #e0e0eb; padding: 15px 0;">
+                    <span style="font-size: 10pt; color: gray;">* 할인 적용 금액은 결제 페이지에서 확인 가능합니다.</span>
+                </div>
+
+                <div style="margin: 10px 0;">
+                    <span style="margin: 0 10px;" class="float_btn">선택상품을</span>
+                    <button class="btn default_btn float_btn" style="background-color: gray; color: #fff;">X 삭제하기</button>&nbsp;
+                    <button class="btn default_btn back_btn float_btn2">장바구니 비우기</button>
+                    <button class="btn default_btn back_btn float_btn2">견적서 출력></button>
+                    <span class="clear_both"></span>
+                </div>
+                <br><br>
+
+                <table class="cal">
+                    <tr>
+                        <th>총 상품금액</th>
+                        <th>총 배송비</th>
+                        <th style="width: 750px; padding: 22px 0;"><span>결제예정금액</span></th>
+                    </tr>
+
+                    <tr style="background-color: #fff;">
+                        <td style="padding: 22px 0;"><span class="price">12000</span>원</td>
+                        <td>+<span class="price">2500</span>원</td>
+                        <td>=<span class="price">14500</span>원</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <div align="center">
+                    <button class="btn default_btn" id="all_product">전체 상품주문</button>
+                    <button class="btn default_btn back_btn" id="order">선택상품 주문</button>
+                    <button class="btn default_btn footer_btn" id="shop">쇼핑 계속하기</button>
+                    <span class="clearboth"></span>
+                </div>
+                <br><br><br><br>
+
+                <div style="border: 1px #e0e0eb; padding: 10px 0; font-size: 12pt; background-color: #f5f5f0; padding-left: 10px;">
+                    이용안내
+                </div>
+                <div style="border: 1px solid #e0e0eb; height: 350px; font-size: 12pt; padding-left: 10px;">
+                    <br>장바구니 이용안내
+                    <ol>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                    </ol>
+                    무이자할부 이용안내
+                    <ol>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                        <li class="info">어쩌고저쩌고</li>
+                    </ol>
+                </div>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>

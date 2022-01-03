@@ -1,0 +1,187 @@
+*{
+    font-family: 'Single Day', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../images/bg3.png);  */
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-position: center; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg3.png); 
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right:50px;
+}
+
+.logo{
+    width: 200px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+#inv{
+    flex: 1;
+    text-align: right;
+}
+
+#inv ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#inv ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+#inv ul li a:hover{
+    text-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+    font-size: 30px;
+}
+
+.s_width {
+    width: 63%; 
+    background-color: beige;
+}
+
+.a_width {
+    width: 30%; 
+    margin-left: 69.25px;
+    background-color: gainsboro;
+}
+
+#basic_s_a {
+    float: left;
+    height: 80%;
+    border: 2px solid #999;
+}
+
+
+
+section > iframe{
+    width:100%;
+    height:100%;
+}
+
+aside > iframe{
+    width:100%;
+    height:100%;
+}
+
+
+
+
+
+/* 상단 슬라이더 */
+.slider {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    /* overflow: hidden; */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .slider>.slides>div>img {
+    margin: 2% 2% 2% 2%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slider>.slides>div>img:nth-child(1) {
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slider>.slides>div>img:nth-child(3) {
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slider > a {
+    display: inline-flex;
+    width: 300px;
+    height: 2rem;
+    background: #eee;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    margin: 0 0 1rem 0;
+    position: relative;
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #000;
+  }

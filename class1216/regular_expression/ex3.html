@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var regExp = /a/g; // 처음 나오는 a (g가 있으면 global: 전부 찾음)
+        // var string = 'Javascript jquery Ajax';
+        // var output = string.replace(regExp, '+$&+'); 
+        // alert(output)
+
+        var regExp = /(a)(v)(a)/;
+        var string = 'Javascript jquery Ajax';
+        var output = string.replace(regExp, '+$1=$2=$3+'); // 그룹
+        alert(output);
+    </script>
+</body>
+</html>

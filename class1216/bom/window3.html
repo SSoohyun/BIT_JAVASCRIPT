@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var child = window.open('', '', 'width=300, height=200');
+        child.moveTo(0, 0); // 절대적으로 이동
+        setInterval(function() {
+            child.moveBy(10, 10); // 상대적으로 이동 (1초마다 대각선 방향으로)
+        }, 1000);
+    </script>
+</body>
+</html>

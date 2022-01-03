@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+
+    <link rel="stylesheet" href="css/listbody.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="bgh">
+        <div class="navbar">
+            <a href="main.html"><img src="images/logo5.png" class="logo"></a>
+            <nav id="inv">
+                <ul>    
+                    <li><a href="listBody.html">Hospital</a></li>
+                    <li><a href="listBody.html">Travel</a></li>
+                    <li><a href="listBody.html">Service</a></li>
+                    <li><a href="listBody.html">Shop</a></li>
+                    <li><a href=""><img src="images/menu.png" class="menu-icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-signup">
+        <!--회원가입 부분-->
+        <section class="signup-wrap">
+            <div>
+                <!--아이디,비번,비번재확인-->
+                <h3>아이디</h3>
+                <span class="signup-input">
+                    <input id="signup-id" type="text"placeholder="ID"></input>
+                    <span class="signup-at"></span>
+                </span>
+
+                <h3>비밀번호</h3>
+                <span class="signup-input">
+                    <input id="signup-pw" type="text"placeholder="PW"></input>
+                    <span class="pw-lock"></span>
+                </span>
+            </div>
+            <div style="margin-top: 35px;">
+                <!--이름,생년월일,성별,이메일-->
+                <h3>이름</h3>
+                <span class="signup-input">
+                    <input id="signup-name" type="text"placeholder="이름"></input>
+                </span>
+                <h3>생년월일</h3>
+                <span style="display: flex;">
+                    <span class="signup-input-birth">
+                        <input id="signup-birth-yy" type="text" placeholder="년(4자)"></input>
+                    </span>
+                    <span class="signup-input-birth" style="margin-left: 10px;">
+                        <select id="signup-birth-mm" class="selectbox" name="month" onchange="">
+                            <option value="month">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </span>
+                    <span class="signup-input-birth" style="margin-left: 10px;">
+                        <input id="signup-birth-dd" type="text" placeholder="일"></input>
+                    </span>
+                </span>
+                <h3>성별</h3>
+                <span class="signup-input">
+                    <select id="signup-gender" class="selectbox" name="gender" onchange="">
+                        <option value="gender">성별</option>
+                        <option value="man">남자</option>
+                        <option value="woman">여자</option>
+                        <option value="no">선택 안함</option>
+                    </select>
+                </span>
+                <span class="choice">
+                    <h3>본인 확인 이메일</h3>
+                    <span>(선택)</span>
+                </span>
+                <span class="signup-input">
+                    <input id="signup-email" type="text" placeholder="선택입력"></input>
+                </span>
+            </div>
+            <div style="margin-top: 35px;">
+                <!--휴대전화-->
+                <h3>휴대전화</h3>
+                </span>
+                <div style="display: flex;">
+                    <span class="signup-input" style="width:100%; margin: 10px 0px 0px 0px">
+                        <input id="signup-phone" type="text" placeholder="전화번호 입력"></input>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <!--가입하기-->
+                <div class="signup-btn-wrap">
+                    <button id="signup-btn"><a href="login1.html">Sign up</a></button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

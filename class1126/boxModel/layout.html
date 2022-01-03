@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* td, th{
+            border: 1px solid black;
+        }
+        #tb1{
+            border: 2px solid red;
+            table-layout: auto;
+        }
+        #tb2{
+            border: 3px dotted teal;
+            background-color: yellow;
+            table-layout: fixed;
+        } */
+
+        /* td, th{
+            border: 2px solid black;
+        }
+        #tb1{
+            border: 3px solid red;
+            background-color: yellow;
+            border-collapse: separate;
+            table-layout: auto;
+        }
+        #tb2{
+            border: 3px solid red;
+            background-color: yellow;
+            border-collapse: collapse;
+            table-layout: auto;
+        } */
+        
+        /* td, th{
+            border: 1px solid red;
+        }
+        #tb1{
+            border: 2px solid green;
+            border-spacing: 10px; 상하좌우
+        }
+        #tb2{
+            border: 3px solid maroon;
+            background-color: aqua;
+            border-spacing: 20px 40px; 좌우, 상하
+        } */
+        
+        /* td, th{
+            border: 1px solid blue;
+        }
+        #tb1{
+            border-collapse: separate;
+            caption-side: top;
+            empty-cells: hide;
+        }
+        #tb2{
+            border-collapse: separate;
+            caption-side: bottom;
+            empty-cells: show;
+        } */
+
+        /* table{
+            border-collapse: collapse;
+            border: 1px solid darkmagenta;
+            width: 400px;
+        }
+        th{
+            background-color: darkmagenta;
+            color: whitesmoke;
+            height: 30px;
+        }
+        td{
+            text-align: center;
+            vertical-align: center;
+            height: 30px;
+        }
+        table, td, th{
+            border: 2px solid darkmagenta;
+        } */
+
+        /* a:link{
+            opacity: 0.5;
+        }
+        a:hover{
+            opacity: 1.0;
+        }
+        img{
+            opacity: 0.2;
+        }
+        img:hover{
+            opacity: 1.0;
+        } */
+
+        /* div.background{
+            background: url(../images/choonsik.jpg) repeat;
+            border: 1px solid black;
+        }
+        div.box{
+            margin: 30px;
+            background-color: #ffffff;
+            border: 2px solid blue;
+            opacity: 0.5;
+        }
+        div.box p{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+        } */
+
+        /* div.tip{
+            opacity: 0.2;
+        }
+        div.ans{
+            opacity: 0.0;
+        }
+        div.tip:hover{
+            opacity: 1.0;
+            color: red;
+        }
+        div.ans:hover{
+            opacity: 1.0;
+            color: blue;
+        } */
+        
+        .v1{
+            visibility: hidden;
+            border: 1px dotted red;
+        }
+        .v2{
+            visibility: visible;
+            border: 1px dotted red;
+        }
+        .v3{
+            display: none;
+            border: 1px dotted red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <h2>table layout auto 예제</h2>
+    <table id="tb1">
+        <tr>
+            <th>table layout auto</th>
+            <td>내용 분량에 따라서 자동으로 조절</td>
+        </tr>
+    </table>
+    <h2>table layout fixed 예제</h2>
+    <table id="tb2" width="250px">
+        <tr>
+            <th>table layout fixed</th>
+            <td>내용 분량과 상관없이 고정</td>
+        </tr>
+    </table> -->
+
+    <!-- <table style id="tb1" width="350px">
+        <tr>
+            <th>table border-collapse</th>
+            <td>separate 적용</td>
+        </tr>
+    </table>
+    <p></p>
+    <table style id="tb2" width="350px">
+        <tr>
+            <th>table border-collapse</th>
+            <td>collapse 적용</td>
+        </tr>
+    </table> -->
+
+    <!-- <table style id="tb1" width="350px">
+        <tr>
+            <th>table border-spacing</th>
+            <td>10px</td>
+        </tr>
+    </table>
+    <p></p>
+    <table style id="tb2" width="350px">
+        <tr>
+            <th>table border-spacing</th>
+            <td>20px 40px</td>
+        </tr>
+    </table> -->
+
+    <!-- <table id="tb1" border="1" width="300px">
+        <tr>
+            <td>국어</td>
+            <td>영어</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td></td>
+        </tr>
+    </table>
+    <p></p>
+    <table id="tb2" border="1" width="300px">
+        <tr>
+            <td>국어</td>
+            <td>영어</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td></td>
+        </tr>
+    </table> -->
+
+    <!-- <table id="tb1" border="1" width="300px">
+        <caption>[table 1-1] 어린이 탐정단</caption>
+        <tr>
+            <td>소속</td>
+            <td>담당자</td>
+            <td>업무</td>
+        </tr>
+        <tr>
+            <td>청솔초등학교</td>
+            <td>코난</td>
+            <td>두뇌가동</td>
+        </tr>
+    </table>
+    <p></p>
+    <table id="tb2" border="1" width="300px">
+        <caption>[table 1-2] 경찰 조직</caption>
+        <tr>
+            <td>소속</td>
+            <td>담당자</td>
+            <td>업무</td>
+        </tr>
+        <tr>
+            <td>??</td>
+            <td>신형사</td>
+            <td>오형사바라기</td>
+        </tr>
+    </table> -->
+
+    <!-- <table>
+        <tr>
+            <th>이름</th>
+            <th>이메일</th>
+        </tr>
+        <tr>
+            <td>코난</td>
+            <td>conan@aaa.com</td>
+        </tr>
+        <tr>
+            <td>장미</td>
+            <td>rose@aaa.com</td>
+        </tr>
+    </table> -->
+
+    <!-- <h3>마우스를 올리면 선명하게 보임</h3>
+    <div>
+        <a href="http://www.google.com">구글 웹 사이트</a>
+    </div>
+    <p></p>
+    <div>
+        <img src="../images/choonsik.jpg">
+    </div> -->
+
+    <!-- <div class="background">
+        <div class="box">
+            <p>HTML5 웹 프로그래밍</p>
+        </div>
+    </div> -->
+
+    <!-- <p>[문제] CSS3에서 불투명도를 적용하기 위한 속성은?</p>
+    <p>1. border</p>
+    <p>2. opacity</p>
+    <p>3. transparency</p>
+    <p>4. visible</p>
+    [힌트] <div class="tip">'불투명'을 뜻하는 영문 단어를 찾아보세요.</div>
+    <p></p>
+    [정답] <div class="ans">정답은 2번입니다.</div> -->
+
+    <div class="v1">
+        <img src="../images/choonsik.jpg" width="100">
+    </div>
+    <div class="v2">
+        <img src="../images/choonsik.jpg" width="100">
+    </div>
+    <div class="v3">
+        <img src="../images/choonsik.jpg" width="100">
+    </div>
+    <div class="v2">
+        <img src="../images/choonsik.jpg" width="100">
+    </div>
+</body>
+</html>

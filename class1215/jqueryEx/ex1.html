@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".a1").hide();
+            $(".a2").hide();
+
+            $(".p1").click(function() {
+                $(".a1").show();
+            });
+
+            $(".p2").click(function() {
+                $(".a2").show();
+            })
+        });
+    </script>
+
+    <h1>질문1: 대한민국의 수도는?</h1>
+    <p class="p1">[정답보기]</p>
+    <h3 class="a1">서울</h3>
+    <h1>질문2: 대한민국의 국보 1호는?</h1>
+    <p class="p2">[정답보기]</p>
+    <h3 class="a2">숭례문</h3>
+</body>
+</html>

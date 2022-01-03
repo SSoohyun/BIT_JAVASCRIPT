@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var regExp = /script/; // 정규 표현식
+        // var string = 'Javascript jquery Ajax';
+        // var output = regExp.test(string); // 매개변수 값이 정규 표현식과 일치하는 문자열이 있는지 판단하여 true/false 반환
+        // alert(output);
+
+        function checkForm() {
+            var regExp = /Java/i; // 대/소문자 구분 x (i는 ignore case)
+            var str = document.frm.title.value;
+            var result = regExp.exec(str); // 매개변수 값이 정규 표현식과 일치하는 문자열을 추출하여 반환
+            alert(result[0]);
+        }
+    </script>
+    <form name="frm">
+        제목: <input type="text" name="title"><p>
+        <input type="submit" value="제출" onclick="checkForm()">
+    </form>
+</body>
+</html>

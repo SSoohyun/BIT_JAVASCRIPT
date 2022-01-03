@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printMsg(msg) { // 기본 함수 선언
+            document.write("기본 함수: " + msg + "<br>"); 
+        }
+
+        var printMsg = function(msg) { // 익명 함수 선언
+            document.write("익명 함수: " + msg + "<br>");
+        }
+
+        printMsg("호출되었습니다."); // 함수 호출 --> 익명 함수 호출 (함수 선언 위치에 관계없이 익명 함수가 호출됨)
+    </script>
+</body>
+</html>

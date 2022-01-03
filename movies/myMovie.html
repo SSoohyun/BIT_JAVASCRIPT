@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/myMovieCss.css">
+    <script src="jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <hgroup id="title">
+        <h1 data-name="information">Information</h1>
+        <h1 data-name="character">Character</h1>
+        <h1 data-name="multimedia">Multimedia</h1>
+    </hgroup>
+    <section id="container">
+        <div id="main" data-name="main" class="active">
+            <img src="images/main.jpg" width="100%"/>
+        </div>
+        <div id="information" data-name="information">
+            <img src="images/info.jpg" width="40%"/>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                   Dignissimos ipsam velit error, quae excepturi quos rem voluptatum quisquam asperiores nam nobis et ea voluptates sint neque eos dolor. 
+                   Quae, magnam!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Dolore iste inventore quisquam et ea libero, veniam magni, 
+                   necessitatibus soluta aliquid odio sint facilis voluptates? 
+                   Distinctio alias necessitatibus recusandae nesciunt fuga.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Nobis reprehenderit adipisci rem laboriosam voluptates aliquid aperiam quibusdam, 
+                   quasi pariatur tempore sed eius sapiente illo libero! 
+                   Exercitationem dignissimos quibusdam laboriosam consectetur.
+                   Nobis reprehenderit adipisci rem laboriosam voluptates aliquid aperiam quibusdam, 
+                   quasi pariatur tempore sed eius sapiente illo libero! 
+                   Exercitationem dignissimos quibusdam laboriosam consectetur.
+                   Nobis reprehenderit adipisci rem laboriosam voluptates aliquid aperiam quibusdam, 
+                   quasi pariatur tempore sed eius sapiente illo libero! 
+                   Exercitationem dignissimos quibusdam laboriosam consectetur.
+                </p>
+            </div>
+        </div>
+        <div id="character" data-name="character">
+            <a href="#">Left Button</a>
+            <a href="#">Right Button</a>
+            <article class="show">
+                <h1>22</h1>
+                <img src="images/ch1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dignissimos ipsam velit error, quae excepturi quos rem voluptatum quisquam asperiores nam nobis et ea voluptates sint neque eos dolor. 
+                    Quae, magnam!</p>
+            </article>
+            <article>
+                <h1>조 가드너</h1>
+                <img src="images/ch2.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dignissimos ipsam velit error, quae excepturi quos rem voluptatum quisquam asperiores nam nobis et ea voluptates sint neque eos dolor. 
+                    Quae, magnam!</p>
+            </article>
+            <article>
+                <h1>Mr. Mittens Cat</h1>
+                <img src="images/ch3.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dignissimos ipsam velit error, quae excepturi quos rem voluptatum quisquam asperiores nam nobis et ea voluptates sint neque eos dolor. 
+                    Quae, magnam!</p>
+            </article>
+        </div>
+        <div id="multimedia" data-name="multimedia">
+            <iframe width="940" height="480" src="https://www.youtube.com/embed/mUChCzv3T9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <nav id="main_navigation">
+        <ul>
+            <li><a href="#" data-target="information">Movie Info</a></li>
+            <li><a href="#" data-target="character">Character</a></li>
+            <li><a href="#" data-target="multimedia">Multimedia</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        $(document).ready(function() {
+            // 네비게이션 버튼 클릭
+            $('#main_navigation a').click(function() {
+                var target = $(this).attr('data-target');
+                alert(target);
+                $(':not([data-name=' + target + '])').removeClass('active');
+                $('[data-name=' + target + ']').addClass('active');
+            });
+            // 캐릭터 이동 버튼
+            var currentPosition = 1;
+            $('#character>a:nth-child(1)').click(function() {
+                currentPosition -= 1;
+                if (currentPosition < 1) {
+                    currentPosition = 3;
+                }
+                $('article').removeClass('show');
+                $('article:nth-of-type(' + currentPosition + ')').addClass('show');
+            });
+
+            $('#character>a:nth-child(2)').click(function() {
+                currentPosition += 1;
+                if (currentPosition > 3) {
+                    currentPosition = 1;
+                }
+                $('article').removeClass('show');
+                $('article:nth-of-type(' + currentPosition + ')').addClass('show');
+            });
+        });
+    </script>
+</body>
+</html>
